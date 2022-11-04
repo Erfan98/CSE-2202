@@ -52,7 +52,7 @@ int main()
     dfs(source); //dfs call for the source.
 
     //for every node call dfs.
-    for(int i=1; i<=n; i++) {
+    for(int i=0; i<n; i++) {
         if(!vis[i]) {
             dfs(i);
         }
