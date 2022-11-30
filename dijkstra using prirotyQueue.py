@@ -1,3 +1,16 @@
+# Input Test Cases
+# 6
+# 8
+# 1 2 2
+# 1 3 4
+# 2 4 7
+# 2 3 1
+# 3 5 3
+# 5 4 2
+# 5 6 5
+# 4 6 1
+# 1
+
 from queue import PriorityQueue
 from math import inf
 def dijkstra(graph,source,nodes):

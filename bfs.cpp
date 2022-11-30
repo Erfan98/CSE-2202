@@ -1,12 +1,9 @@
 #include<bits/stdc++.h>
 using namespace std;
-
 #define MX 110
-
 vector < int > graph[MX];
 bool vis[MX];
 // int dist[MX];
-
 void bfs(int source){
     queue < int > Q;
     // initialization
@@ -29,7 +26,6 @@ void bfs(int source){
         }
     }
 }
-
 int main()
 {
     int nodes, edges;
@@ -41,10 +37,8 @@ int main()
         graph[u].push_back(v);
         graph[v].push_back(u);
     }
-
     int source;
     cin >> source;
-
     bfs(source);
     return 0;
 }

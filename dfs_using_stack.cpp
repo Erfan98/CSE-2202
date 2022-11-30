@@ -1,15 +1,11 @@
 #include<bits/stdc++.h>
 using namespace std;
-
 const int N = 1e5+9;
 vector<int> graph[N];
 bool vis[N];
-
-
 void dfs(int source){
     stack<int> st;
     st.push(source);
-
     while(!st.empty()){
         int top = st.top();
         if(!vis[top]){
@@ -26,7 +22,6 @@ void dfs(int source){
     }
 
 }
-
 int main(){
    // graph input
     int node,edge;
@@ -39,8 +34,6 @@ int main(){
     }
     int source;
     cin>>source;
-
     dfs(source);
-
 }
 
